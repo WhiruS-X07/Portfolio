@@ -2,7 +2,7 @@
 
 Welcome to my **Portfolio Website**, showcasing my skills, projects, and services as a **web developer** and **freelancer**.  
 
-🔗 **Live Demo:**   
+🔗 **Live Demo:**   https://whirus-x07.github.io/Portfolio/ **
 
 ## 🛠️ Technologies Used  
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap  
