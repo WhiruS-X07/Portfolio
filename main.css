@@ -181,7 +181,7 @@ h6 {
   color: var(--heading-color);
 }
 
-.header .social-links {
+/* .header .social-links {
   margin: 0 0 20px 0;
 }
 
@@ -203,7 +203,7 @@ h6 {
 .header .social-links a:hover {
   color: var(--contrast-color);
   background: var(--accent-color);
-}
+} */
 
 @media (min-width: 1200px) {
 
@@ -591,7 +591,7 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
-.Home .social-links {
+/* .Home .social-links {
   margin-top: 25px;
 }
 
@@ -616,7 +616,7 @@ section,
   .Home p {
     font-size: 20px;
   }
-}
+} */
 
 .Home .buttons
 
@@ -1230,9 +1230,94 @@ line-height: 1.2;
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2rem;
+  background: transparent;
+  transform: rotate(318deg) skew(199deg);
+  box-shadow: -10px 10px 5px rgba(0, 0, 0, .5);
+  position: relative;
+  transition: 0.5s;
+  color: #fff;
+  font-size: 1.2rem; /* Adjusted icon size */
+  text-decoration: none;
+}
+
+.social-links a i {
+  transform: rotate(-318deg) skew(-199deg); /* Undo the rotation/skew for the icon itself */
+}
+
+
+.social-links a::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -8px;           
+  height: 100%;
+  width: 8px;           
+  background: transparent;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.social-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;         
+  left: -4px;           
+  height: 8px;          
+  width: 100%;
+  background: transparent;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+
+.social-links a:hover {
+  transform: rotate(322deg) skew(199deg) translate(6px, -8px);
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+
+/* Hover colors for each platform */
+.social-links a.twitter:hover {
+  background: #1da1f2;
+}
+.social-links a.twitter:hover::before {
+  background: #0d95e8;
+}
+.social-links a.twitter:hover::after {
+  background: #66c1f5;
+}
+
+.social-links a.instagram:hover {
+  background: #e4405f;
+}
+.social-links a.instagram:hover::before {
+  background: #d81c3f;
+}
+.social-links a.instagram:hover::after {
+  background: #e46880;
+}
+
+.social-links a.linkedin:hover {
+  background: #0077b5;
+}
+.social-links a.linkedin:hover::before {
+  background: #005983;
+}
+.social-links a.linkedin:hover::after {
+  background: #339ddc;
 }
